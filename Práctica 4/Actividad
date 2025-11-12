@@ -1,0 +1,10 @@
+A pesar de que tanto malloc como calloc nos sirven para reservar memoria, la principal diferencia entre ambos radica
+en su inicialización cuando el usuario no ha utilizado dicha reserva. Para malloc, su impresion muestra solo valores 
+basura completamente aleatorios, mientras que para calloc, su inicialización es en ceros.
+Ahora hablando del redimensionador realloc, al necesitar mayor número de enteros (if (m>n)), solo aumenta la memoria 
+que está siendo utilizada o, en caso de que exceda el límite, cambia de lugar la memoria actual para poder reservar 
+los nuevos datos. Por el contrario, cuando el usuario indica un número menor al original (if (m<n)), la memoria 
+utilizada se reduce.
+También es importante hablar de las funciones de free utilizadas al final del código ya que sin ellas nos podría 
+ocurrir el llamado "Memory Leak" o fuga de memoria lo que puede hacer que tu programa reserve más y más memoria cada 
+vez, acumulándose hasta que el propio código o nuestro dispositivo presenta fallas.
