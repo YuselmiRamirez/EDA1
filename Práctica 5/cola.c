@@ -42,7 +42,7 @@ void enqueue(Cola *c, int dato){
 
 int dequeue(Cola *c){
     if(c->frente>c->final){
-        printf("Error: la cola está vacía, no se puede desencolar.\n");
+        printf("Error: la cola esta vacia, no se puede desencolar.\n");
         return -1;
     }
 
@@ -56,7 +56,7 @@ int main(){
     int cantidad, eliminar;
     inicializarCola(&laCola);
     
-    printf("¿Cuántos elementos deseas encolar? (Máximo 5) ");
+    printf("¿Cuantos elementos deseas encolar? (Máximo 5) ");
     scanf("%d", &cantidad);
     if(cantidad<=5){
         int dato;
@@ -66,10 +66,10 @@ int main(){
             enqueue(&laCola, dato);
         }
     }else{
-        printf("Número inválido. Máximo 5.\n");
+        printf("Numero inválido. Maximo 5.\n");
     }
 
-    printf("¿Cuántos elementos deseas desencolar? ");
+    printf("¿Cuantos elementos deseas desencolar? ");
     scanf("%d", &eliminar);
     if(eliminar<=5){
         for(int i=0; i<eliminar; i++){
