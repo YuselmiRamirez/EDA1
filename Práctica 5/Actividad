@@ -1,1 +1,8 @@
-
+Pila cuenta con un orden de salida tipo LIFO (Last in, First out), que se refiere a que, el último elemento en entrar es también el primero
+en salir, mientras que para cola tiene un FIFO (First in, First out) el cual tiene un orden de salida que, el primer elemento en entrar
+es el primero en salir, mostrando sus principales diferencias.
+Hablando de la lógica principal dentro del código, cuando se utiliza pop en una pila vacía, ocurre un error de desbordamiento por abajo
+o también conocido "Underflow". El mismo caso sucede al utilizar dequeue en una cola vacia.
+A diferencia de los errores anteriores, al intentar agregar más elementos con una pila o una cola llena, si no estan bien utilizados el pop
+y dequeue, puede ocurrir una fuga de memoria o memory leak. Al ser bien utilizados, lo único que puede suceder es un Overflow para el cual
+se muestra un mensaje que denote el error (EJ. COLA: if(c->final==max_tam - 1){ printf("Cola llena. No se puede encolar."); return; }
