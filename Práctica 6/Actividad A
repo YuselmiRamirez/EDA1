@@ -1,0 +1,7 @@
+Al hablar de colas tenemos aquella que es lineal y, en este caso, la circular. Enfocándonos
+en la cola circular se nos presenta la evasión del desperdicio del espacio ya que, como su
+nombre lo dice, el elemento final de conecta con el inicial, reutilizando espacios vacíos.
+Debido a lo mismo, cuando el índice final llega al final del arreglo, el índice regresa al inicio.
+Suelen ocurrir casos en los que se intenta encolar cuando la cola está llena, en estos casos
+lo que ocurre es un desbordamiento u Overflow al tener todos los lugares ocupados dentro
+de la cola.
