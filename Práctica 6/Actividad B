@@ -1,0 +1,17 @@
+Cuando hablamos de deque (Double Ended Queue) y una cola circular normal (Queue) nos
+encontramos con que su principal diferencia radica en las operaciones utilizables. Dentro de
+queue contamos únicamente con las operaciones de encolar por el final y desencolar por el
+frente (FIFO), mientras que, en dequeue tenemos varias más como insert_front(),
+insert_rear(), etc.
+En dequeue podemos simular tanto FIFO como LIFO. Para First In, Last Out es fácilmente
+simulable con insert_rear() y delete_front(), mientras que, para Last In, First Out se utiliza
+insert_front y delete_front. Para este último caso, front puede ser cambiado por rear para su
+caso.
+Deque tiene varios casos aplicables, siendo los principales realizar operaciones rotacionales
+o incluso algoritmos dentro del historial de navegación.
+
+Referencias.
+Applications, Advantages and Disadvantages of Deque. (s. f.).
+https://www.tutorialspoint.com/applications-advantages-and-disadvantages-of-deque
+
+
