@@ -60,11 +60,11 @@ int main(void) {
         }
     }
 
-    printf("\n####### Contenido de la videoteca #######\n");
+    printf("\n Contenido de la videoteca. \n");
     for (int i = numPeliculas - 1; i >= 0; i--) {
         printf("Pelicula: %s\n", videoteca[i].nombre);
         printf("Genero: %s\n", videoteca[i].genero);
-        printf("AÃ±o: %d\n", videoteca[i].y);
+        printf("Anio: %d\n", videoteca[i].y);
         printf("Directores (%d):\n", videoteca[i].numDirectores);
         for (int j = 0; j < videoteca[i].numDirectores; j++) {
             printf("  - %s\n", videoteca[i].directores[j]);
@@ -74,11 +74,11 @@ int main(void) {
     int a, b;
     char op[20];
 
-    printf("\nÂ¿Deseas hacer una bÃºsqueda mÃ¡s precisa de tu videoteca? (Si = 1, No = 2): ");
+    printf("\n¿Deseas hacer una busqueda mas precisa de tu videoteca? (Si = 1, No = 2): ");
     scanf("%d", &a);
 
     if (a == 1) {
-        printf("Menu de opciones:\n 1. Nombre\n 2. AÃ±o\n 3. Genero\n 4. Director\n");
+        printf("Menu de opciones:\n 1. Nombre\n 2. Anio\n 3. Genero\n 4. Director\n");
         scanf("%d", &b);
 
         if (b == 1) {
@@ -88,8 +88,8 @@ int main(void) {
                 if (cad(videoteca[i].nombre, op)) {
                     printf("\nTu pelicula es:\n");
                     printf("Nombre: %s\n", videoteca[i].nombre);
-                    printf("GÃ©nero: %s\n", videoteca[i].genero);
-                    printf("AÃ±o: %d\n", videoteca[i].y);
+                    printf("Genero: %s\n", videoteca[i].genero);
+                    printf("Anio: %d\n", videoteca[i].y);
                     for (int j = 0; j < videoteca[i].numDirectores; j++) {
                         printf("  - %s\n", videoteca[i].directores[j]);
                     }
@@ -97,14 +97,14 @@ int main(void) {
             }
         } else if (b == 2) {
             int aB;
-            printf("AÃ±o de la pelicula: ");
+            printf("Anio de la pelicula: ");
             scanf("%d", &aB);
             for (int i = 0; i < numPeliculas; i++) {
                 if (videoteca[i].y == aB) {
                    printf("\nTu pelicula es:\n");
                     printf("Nombre: %s\n", videoteca[i].nombre);
                     printf("Genero: %s\n", videoteca[i].genero);
-                    printf("AÃ±o: %d\n", videoteca[i].y);
+                    printf("Anio: %d\n", videoteca[i].y);
                     for (int j = 0; j < videoteca[i].numDirectores; j++) {
                         printf("  - %s\n", videoteca[i].directores[j]);
                     }
@@ -118,7 +118,7 @@ int main(void) {
                      printf("\nTu pelicula es:\n");
                     printf("Nombre: %s\n", videoteca[i].nombre);
                     printf("Genero: %s\n", videoteca[i].genero);
-                    printf("AÃ±o: %d\n", videoteca[i].y);
+                    printf("Anio: %d\n", videoteca[i].y);
                     for (int j = 0; j < videoteca[i].numDirectores; j++) {
                         printf("  - %s\n", videoteca[i].directores[j]);
                     }
@@ -133,7 +133,7 @@ int main(void) {
                           printf("\nTu pelicula es:\n");
                     printf("Nombre: %s\n", videoteca[i].nombre);
                     printf("Genero: %s\n", videoteca[i].genero);
-                    printf("AÃ±o: %d\n", videoteca[i].y);
+                    printf("Anio: %d\n", videoteca[i].y);
                     for (int j = 0; j < videoteca[i].numDirectores; j++) {
                         printf("  - %s\n", videoteca[i].directores[j]);
                         }
