@@ -1,0 +1,37 @@
+Algoritmo maximo_recursivo(arreglo de enteros arr, entero in, entero fin)
+
+Si in = fin entonces
+   Regresar arr[in]
+FinSi
+
+Entero mid = (in+fin)/2
+Entero maxizq = maximo_recirsivo(arr, in, mid)
+Entero maxder = maximo_recursivo(arr, mid + 1, fin)
+
+Si maxizq > maxder entonces
+   Regresa maxizq
+Sino
+   Regresa maxder
+FinSi
+
+Entero main()
+Entero n, i
+Arreglo de enteros lista
+
+Imprimir "Ingresa el tamaño de la lista:"
+Leer n
+
+Lista = nueva lista con tamaño n
+
+Imprimir "Ingresa los elementos:"
+Para i = 0 hasta n-1 hacer
+   Leer lista[i]
+ 
+Entero resultado = maximo_recursivo(lista, 0, n-1)
+
+Imprime "El valor maximo es:"
+
+Libera lista
+Regresa 0
+
+FinAlgoritmo
