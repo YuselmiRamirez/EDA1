@@ -1,0 +1,6 @@
+Las listas enlazadas, a diferencia de los arreglos, no requieren de un tamaño fijo ya que
+crecen y se reducen de forma dinámica.
+Para este tipo de listas tenemos el término “mover la cabeza” que no se refiere a nada
+más que eliminar el primer nodo de la lista creada. Igualmente podemos modificar los
+punteros internos que son de forma práctica, lo mismo, sin embargo para este caso
+el término es utilizado cuando el nodo a eliminar esta a la mitad o al final de la lista.
