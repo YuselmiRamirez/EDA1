@@ -1,0 +1,9 @@
+Por otro lado tenemos también las listas circulares, que nos muestran una ventaja por
+encima de las simples debido a que el último nodo apunta directamente al primero, 
+lo cual nos evita tener que hacerlo de forma manual. 
+Sin embargo, en este caso también pueden ocurrir errores provocados por código
+incompleto. Por ejemplo un bucle infinito que lleva al consumo total del CPU y al
+congelamiento de nuestro programa.
+En el mundo real tenemos ejemplos de este tipo de listas como lo pueden ser los juegos de
+tablero o los relojes.
+
