@@ -1,0 +1,8 @@
+¿Qué diferencia hay entre una lista doblemente ligada y una circular doblemente ligada?
+En las listas circulares doblemente ligadas el recorrido se realiza de forma cíclica, sin tener
+extremos en “NULL”
+¿Qué errores pueden causar ciclos infinitos al recorrer una lista circular?
+Casos vacíos donde cabeza == NULL -> no existe la búsqueda 
+¿Qué tipo de aplicaciones reales usan este tipo de listas?
+Listas de reproducción en sitios web, caché en el navegador o en funciones “deshacer” y
+“hacer”
